@@ -1,0 +1,13 @@
+curl -i -XPUT -H "Content-Type:application/json" -d '{"Producent": "Nikon", "Model": "D610", "Klasa": "FF", "Produkowany": true, "cena": 3999}' http://localhost:8098/buckets/s12708/keys/d610/?returnbody=true
+HTTP/1.1 200 OK
+X-Riak-Vclock: a85hYGBgzGDKBVI8ypz/ftZJyrkxMPgpZjAlMuWxMsxdnHKNLwsA
+Vary: Accept-Encoding
+Server: MochiWeb/1.1 WebMachine/1.10.9 (cafe not found)
+Link: </buckets/s12708>; rel="up"
+Last-Modified: Thu, 30 May 2019 18:57:33 GMT
+ETag: "5VWcsIgCNBVefKfZUgKo3c"
+Date: Thu, 30 May 2019 18:57:33 GMT
+Content-Type: application/json
+Content-Length: 89
+
+{"Producent": "Nikon", "Model": "D610", "Klasa": "FF", "Produkowany": true, "cena": 3999}

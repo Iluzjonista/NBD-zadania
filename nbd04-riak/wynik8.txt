@@ -1,0 +1,14 @@
+curl -i -XPOST -H "Content-Type:application/json" -d '{"Producent": "Canon", "Model": "6D", "Klasa": "FX", "Produkowany": true}' http://localhost:8098/buckets/s12708/keys/?returnbody=true
+HTTP/1.1 201 Created
+X-Riak-Vclock: a85hYGBgzGDKBVI8ypz/ftaxCrAwMPgpZzAlMuaxMixck3KNLwsA
+Vary: Accept-Encoding
+Server: MochiWeb/1.1 WebMachine/1.10.9 (cafe not found)
+Location: /buckets/s12708/keys/PkBYKsnyh8gPWwmc1OcjH7gGgcH
+Link: </buckets/s12708>; rel="up"
+Last-Modified: Thu, 30 May 2019 19:36:01 GMT
+ETag: "3ERPnF5qMinwsm7CvN9ie0"
+Date: Thu, 30 May 2019 19:36:01 GMT
+Content-Type: application/json
+Content-Length: 73
+
+{"Producent": "Canon", "Model": "6D", "Klasa": "FX", "Produkowany": true}

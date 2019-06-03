@@ -1,0 +1,13 @@
+curl -i -XPUT -H "Content-Type:application/json" -d '{"Producent": "Panasonic", "Model": "gh5", "Klasa": "m43", "Produkowany": true}' http://localhost:8098/buckets/s12708/keys/gh5/?returnbody=true
+HTTP/1.1 200 OK
+X-Riak-Vclock: a85hYGBgzGDKBVI8ypz/ftb+PsXDwOCnmMGUyJTHyiC/IuUaXxYA
+Vary: Accept-Encoding
+Server: MochiWeb/1.1 WebMachine/1.10.9 (cafe not found)
+Link: </buckets/s12708>; rel="up"
+Last-Modified: Thu, 30 May 2019 19:16:47 GMT
+ETag: "1hSHRZMuzPy8O4A53xbVQa"
+Date: Thu, 30 May 2019 19:16:47 GMT
+Content-Type: application/json
+Content-Length: 79
+
+{"Producent": "Panasonic", "Model": "gh5", "Klasa": "m43", "Produkowany": true}

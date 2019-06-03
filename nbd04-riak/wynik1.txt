@@ -1,0 +1,72 @@
+curl -i -XPUT -H "Content-Type:application/json" -d '{"Producent": "Nikon", "Model": "D610", "Klasa": "FF", "Produkowany": true}' http://localhost:8098/buckets/s12708/keys/d610/?returnbody=true
+HTTP/1.1 200 OK
+X-Riak-Vclock: a85hYGBgzGDKBVI8ypz/ftZJyrkxMPgpZjAlMuaxMtxfmHKNLwsA
+Vary: Accept-Encoding
+Server: MochiWeb/1.1 WebMachine/1.10.9 (cafe not found)
+Link: </buckets/s12708>; rel="up"
+Last-Modified: Thu, 30 May 2019 18:50:07 GMT
+ETag: "5JqImedVKiUJwUrKyn8ndA"
+Date: Thu, 30 May 2019 18:50:07 GMT
+Content-Type: application/json
+Content-Length: 75
+
+{"Producent": "Nikon", "Model": "D610", "Klasa": "FF", "Produkowany": true}
+
+
+curl -i -XPUT -H "Content-Type:application/json" -d '{"Producent": "Sony", "Model": "A7", "Klasa": "FF", "Produkowany": true}' http://localhost:8098/buckets/s12708/keys/a7/?returnbody=true
+HTTP/1.1 200 OK
+X-Riak-Vclock: a85hYGBgzGDKBVI8ypz/ftbx+RsxMPgpZjAlMuaxMkgvSrnGlwUA
+Vary: Accept-Encoding
+Server: MochiWeb/1.1 WebMachine/1.10.9 (cafe not found)
+Link: </buckets/s12708>; rel="up"
+Last-Modified: Thu, 30 May 2019 18:51:07 GMT
+ETag: "6FANrBm3e4TFmFf2DcrFox"
+Date: Thu, 30 May 2019 18:51:07 GMT
+Content-Type: application/json
+Content-Length: 72
+
+{"Producent": "Sony", "Model": "A7", "Klasa": "FF", "Produkowany": true}
+
+
+curl -i -XPUT -H "Content-Type:application/json" -d '{"Producent": "Fuji", "Model": "x-t1", "Klasa": "DX", "Produkowany": false}' http://localhost:8098/buckets/s12708/keys/xt1/?returnbody=true
+HTTP/1.1 200 OK
+X-Riak-Vclock: a85hYGBgzGDKBVI8ypz/ftb+vlnGwOCnlMGUyJjHymC0KOUaXxYA
+Vary: Accept-Encoding
+Server: MochiWeb/1.1 WebMachine/1.10.9 (cafe not found)
+Link: </buckets/s12708>; rel="up"
+Last-Modified: Thu, 30 May 2019 18:51:30 GMT
+ETag: "3wRBJi40H5KNYXngVpxg4o"
+Date: Thu, 30 May 2019 18:51:30 GMT
+Content-Type: application/json
+Content-Length: 75
+
+{"Producent": "Fuji", "Model": "x-t1", "Klasa": "DX", "Produkowany": false}
+
+curl -i -XPUT -H "Content-Type:application/json" -d '{"Producent": "Olympus", "Model": "e510", "Klasa": "DX", "Produkowany": false}' http://localhost:8098/buckets/s12708/keys/e510/?returnbody=true
+HTTP/1.1 200 OK
+X-Riak-Vclock: a85hYGBgzGDKBVI8ypz/ftZJxmQzMPgpZTAlMuaxMngsSrnGlwUA
+Vary: Accept-Encoding
+Server: MochiWeb/1.1 WebMachine/1.10.9 (cafe not found)
+Link: </buckets/s12708>; rel="up"
+Last-Modified: Thu, 30 May 2019 18:51:52 GMT
+ETag: "6Pdy9lDpAim4aFs2STMSXO"
+Date: Thu, 30 May 2019 18:51:52 GMT
+Content-Type: application/json
+Content-Length: 78
+
+{"Producent": "Olympus", "Model": "e510", "Klasa": "DX", "Produkowany": false}
+
+
+curl -i -XPUT -H "Content-Type:application/json" -d '{"Producent": "Panasonic", "Model": "gh5", "Klasa": "DX", "Produkowany": true}' http://localhost:8098/buckets/s12708/keys/gh5/?returnbody=true
+HTTP/1.1 200 OK
+X-Riak-Vclock: a85hYGBgzGDKBVI8ypz/ftb+PsXDwOCnmMGUyJjHylCxKOUaXxYA
+Vary: Accept-Encoding
+Server: MochiWeb/1.1 WebMachine/1.10.9 (cafe not found)
+Link: </buckets/s12708>; rel="up"
+Last-Modified: Thu, 30 May 2019 18:52:40 GMT
+ETag: "1pgU1QqqcCzAGgpbFGRzKR"
+Date: Thu, 30 May 2019 18:52:40 GMT
+Content-Type: application/json
+Content-Length: 78
+
+{"Producent": "Panasonic", "Model": "gh5", "Klasa": "DX", "Produkowany": true}

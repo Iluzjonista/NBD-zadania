@@ -1,0 +1,13 @@
+curl -i -XPUT -H "Content-Type:application/json" -d '{"Producent": "Fuji", "Model": "x-t1", "Produkowany": false}' http://localhost:8098/buckets/s12708/keys/xt1/?returnbody=true
+HTTP/1.1 200 OK
+X-Riak-Vclock: a85hYGBgzGDKBVI8ypz/ftb+vlnGwOCnlMGUyJTHynB7cco1viwA
+Vary: Accept-Encoding
+Server: MochiWeb/1.1 WebMachine/1.10.9 (cafe not found)
+Link: </buckets/s12708>; rel="up"
+Last-Modified: Thu, 30 May 2019 18:58:35 GMT
+ETag: "PDYyYdgEb9NbHwJvt6D9Y"
+Date: Thu, 30 May 2019 18:58:35 GMT
+Content-Type: application/json
+Content-Length: 60
+
+{"Producent": "Fuji", "Model": "x-t1", "Produkowany": false}

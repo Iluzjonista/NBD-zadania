@@ -1,0 +1,38 @@
+1.
+curl -i -XPUT -H "Content-Type:application/json" -d '{"Producent": "Nikon", "Model": "D610", "Klasa": "FF", "Produkowany": true}' http://localhost:8098/buckets/s12708/keys/d610/?returnbody=true
+
+curl -i -XPUT -H "Content-Type:application/json" -d '{"Producent": "Sony", "Model": "A7", "Klasa": "FF", "Produkowany": true}' http://localhost:8098/buckets/s12708/keys/a7/?returnbody=true
+
+curl -i -XPUT -H "Content-Type:application/json" -d '{"Producent": "Fuji", "Model": "x-t1", "Klasa": "DX", "Produkowany": false}' http://localhost:8098/buckets/s12708/keys/xt1/?returnbody=true
+
+curl -i -XPUT -H "Content-Type:application/json" -d '{"Producent": "Olympus", "Model": "e510", "Klasa": "DX", "Produkowany": false}' http://localhost:8098/buckets/s12708/keys/e510/?returnbody=true
+
+curl -i -XPUT -H "Content-Type:application/json" -d '{"Producent": "Panasonic", "Model": "gh5", "Klasa": "DX", "Produkowany": true}' http://localhost:8098/buckets/s12708/keys/gh5/?returnbody=true
+
+2.
+curl -i -X GET  http://localhost:8098/buckets/s12708/keys/e510
+
+3.
+curl -i -XPUT -H "Content-Type:application/json" -d '{"Producent": "Nikon", "Model": "D610", "Klasa": "FF", "Produkowany": true, "cena": 3999}' http://localhost:8098/buckets/s12708/keys/d610/?returnbody=true
+
+4.
+curl -i -XPUT -H "Content-Type:application/json" -d '{"Producent": "Fuji", "Model": "x-t1", "Produkowany": false}' http://localhost:8098/buckets/s12708/keys/xt1/?returnbody=true
+
+5.
+curl -i -XPUT -H "Content-Type:application/json" -d '{"Producent": "Panasonic", "Model": "gh5", "Klasa": "m43", "Produkowany": true}' http://localhost:8098/buckets/s12708/keys/gh5/?returnbody=true
+
+6.
+curl -v -XDELETE http://localhost:8098/buckets/s12708/keys/xt1?returnbody=true
+
+7.
+curl -i -X GET http://localhost:8098/buckets/s12708/keys/xt1?returnbody=true
+
+8.
+curl -i -XPOST -H "Content-Type:application/json" -d '{"Producent": "Canon", "Model": "6D", "Klasa": "FX", "Produkowany": true}' http://localhost:8098/buckets/s12708/keys/?returnbody=true
+
+9.
+curl -i -X GET http://localhost:8098/buckets/s12708/keys/PkBYKsnyh8gPWwmc1OcjH7gGgcH?returnbody=true
+
+10.
+curl -v -XDELETE http://localhost:8098/buckets/s12708/keys/PkBYKsnyh8gPWwmc1OcjH7gGgcH?returnbody=true
+

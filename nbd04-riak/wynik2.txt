@@ -1,0 +1,13 @@
+curl -i -X GET http://localhost:8098/buckets/s12708/keys/e510
+HTTP/1.1 200 OK
+X-Riak-Vclock: a85hYGBgzGDKBVI8ypz/ftZJxmQzMPgpZTAlMuaxMngsSrnGlwUA
+Vary: Accept-Encoding
+Server: MochiWeb/1.1 WebMachine/1.10.9 (cafe not found)
+Link: </buckets/s12708>; rel="up"
+Last-Modified: Thu, 30 May 2019 18:51:52 GMT
+ETag: "6Pdy9lDpAim4aFs2STMSXO"
+Date: Thu, 30 May 2019 18:55:45 GMT
+Content-Type: application/json
+Content-Length: 78
+
+{"Producent": "Olympus", "Model": "e510", "Klasa": "DX", "Produkowany": false}
