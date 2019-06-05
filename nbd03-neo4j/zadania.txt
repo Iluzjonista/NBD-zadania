@@ -80,7 +80,7 @@ CREATE (stop1)-[bf:BUSINESS_FLIGHT {price: t.price, class:t.class, date: f.date,
 RETURN bf;
 
 18.
-MATCH airport=(airportStp:Airport{name: "DAY"})<-[businessFlight:BUSINESS_FLIGHT*1..10]-(airportStrt:Airport {name: "LAX"}), (airportStp:Airport)<-[:DESTINATION]-(), ()-[:ORIGIN]->(airportStrt:Airport) WITH airport,  reduce(totalDis=0, rel IN relationships(airport)|totalDis + rel.price) as cost RETURN airport, cost ORDER BY cost LIMIT 1
+MATCH airport=(stop:Airport{name: "DAY"})<-[businessFlight:BUSINESS_FLIGHT*1..10]-(airportStrt:Airport {name: "LAX"}), (stop:Airport)<-[:DESTINATION]-(), ()-[:ORIGIN]->(airportStrt:Airport) WITH airport,  reduce(totalDis=0, rel IN relationships(airport)|totalDis + rel.price) as cost RETURN airport, cost ORDER BY cost LIMIT 1
 BRAK WYNIKOW (no changes, no records)
 
 
@@ -88,4 +88,4 @@ BRAK WYNIKOW (no changes, no records)
 MATCH airport=(stop1:Airport)<-[cheapFlight:CHEAPEST_FLIGHT]-(start1:Airport) WITH cheapFlight, stop1.name + start1.name as special RETURN  cheapFlight.airline as flight,  count(DISTINCT special) AS number ORDER BY number DESC
 
 20.
-MATCH airport=(airportStp:Airport)<-[:CHEAPEST_FLIGHT]-(airportStrt:Airport)<-[:CHEAPEST_FLIGHT]-(airportThird:Airport)  WITH airport, reduce(totalPrice=0, rel IN relationships(airport)|totalPrice + rel.price) as cost WHERE airportStp<>airportThird  RETURN airport, cost ORDER BY cost LIMIT 1
+MATCH airport=(stop:Airport)<-[:CHEAPEST_FLIGHT]-(airportStrt:Airport)<-[:CHEAPEST_FLIGHT]-(airportThird:Airport)  WITH airport, reduce(totalPrice=0, rel IN relationships(airport)|totalPrice + rel.price) as cost WHERE stop<>airportThird  RETURN airport, cost ORDER BY cost LIMIT 1
