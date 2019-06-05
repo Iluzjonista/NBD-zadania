@@ -1,0 +1,17 @@
+python program_s12708.py
+#Connect to riak..
+#Creating and selecting a bucket..
+#Inserting JSON(or any data) into the bucket..
+#Retrieving data from a bucket
+
+{u'dostepnosc': True, u'price': 2000, u'model': u'e6', u'name': u'Olympus'}
+
+#Giving new information for a product..
+#Retrieving data from a bucket after update
+
+{u'dostepnosc': False, u'price': 2500, u'model': u'e610', u'name': u'Olympus'}
+
+#Deleting data from a bucket..
+#Retrieving data from a bucket
+
+None
